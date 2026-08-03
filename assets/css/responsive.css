@@ -1,0 +1,308 @@
+/* ===========================================
+   SMTB SCHOOL — RESPONSIVE
+   responsive.css
+   Media queries only — no duplicated styles
+   Breakpoints: Desktop > 1280, Laptop <=1280,
+   Tablet <=1024, Mobile <=768
+=========================================== */
+
+/* ===========================================
+   LAPTOP (<= 1280px)
+=========================================== */
+@media (max-width: 1280px) {
+  :root {
+    --container-max: 1140px;
+    --space-16: 6rem;
+    --space-20: 7rem;
+  }
+
+  .features-grid,
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .levels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: var(--space-4);
+  }
+}
+
+/* ===========================================
+   TABLET (<= 1024px)
+=========================================== */
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 72px;
+    --space-16: 5rem;
+  }
+
+  /* Hide desktop nav, show toggle */
+  .navbar__links { display: none; }
+  .navbar__toggle { display: flex; }
+  .navbar__cta .btn { display: none; }
+
+  /* Layouts collapse to fewer columns */
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+
+  .principal__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .principal__image-wrap {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .academics-block {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .academics-block:nth-child(even) .academics-block__image {
+    order: 0;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .process-grid::before { display: none; }
+
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news-featured {
+    grid-column: span 2;
+    grid-row: span 1;
+    min-height: 360px;
+  }
+
+  .gallery-masonry {
+    columns: 2;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer__brand { grid-column: span 2; }
+
+  .hero__stats-inner {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+  }
+
+  .hero__stat { flex: 1 1 40%; }
+}
+
+/* ===========================================
+   MOBILE (<= 768px)
+=========================================== */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+    --space-16: 4rem;
+    --space-12: 3rem;
+    --space-10: 2.5rem;
+  }
+
+  .container { padding: 0 var(--space-3); }
+
+  .section { padding: var(--space-12) 0; }
+
+  /* Typography scales down */
+  h1 { font-size: clamp(2rem, 8vw, 2.75rem); }
+  h2 { font-size: clamp(1.75rem, 6vw, 2.25rem); }
+  h3 { font-size: clamp(1.25rem, 5vw, 1.75rem); }
+
+  .lead { font-size: 1.0625rem; }
+
+  /* Hero */
+  .hero {
+    min-height: 560px;
+    text-align: center;
+  }
+
+  .hero__content { margin: 0 auto; text-align: center; }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__stats-inner {
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-3);
+  }
+
+  .hero__stat-num { font-size: 1.75rem; }
+  .hero__stat-label { font-size: 0.6875rem; }
+
+  .hero__scroll { display: none; }
+
+  /* Grids to single column */
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid,
+  .facilities-grid,
+  .values-grid,
+  .achievements__grid,
+  .levels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-featured {
+    grid-column: span 1;
+    min-height: 320px;
+  }
+
+  .gallery-masonry { columns: 1; }
+
+  /* Buttons stack */
+  .hero__actions .btn,
+  .cta-banner .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn--lg { padding: 1rem 2rem; }
+
+  /* Principal */
+  .principal__badge {
+    right: 0;
+    bottom: -16px;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .principal__quote { font-size: 1.125rem; }
+
+  /* Testimonials */
+  .testimonial-card { padding: var(--space-4); }
+  .testimonial-card__quote { font-size: 1.125rem; }
+
+  /* Contact */
+  .form-row { grid-template-columns: 1fr; }
+
+  .contact-form { padding: var(--space-4); }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer__brand { grid-column: span 1; }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button { width: 100%; }
+
+  /* Page header */
+  .page-header {
+    height: 50vh;
+    min-height: 360px;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Lightbox nav */
+  .lightbox__nav { width: 44px; height: 44px; }
+  .lightbox__nav--prev { left: 0.75rem; }
+  .lightbox__nav--next { right: 0.75rem; }
+  .lightbox__close { top: 1rem; right: 1rem; }
+
+  /* Tabs */
+  .tabs-nav { gap: 0.25rem; }
+  .tab-btn { padding: 0.6rem 1rem; font-size: 0.875rem; }
+}
+
+/* ===========================================
+   SMALL MOBILE (<= 480px)
+=========================================== */
+@media (max-width: 480px) {
+  .container { padding: 0 var(--space-2); }
+
+  .navbar__logo-name { font-size: 1rem; }
+  .navbar__logo-sub { font-size: 0.625rem; }
+  .navbar__logo-mark { width: 40px; height: 40px; font-size: 1rem; }
+
+  .hero__stat { flex: 1 1 100%; }
+
+  .hero__stat-num { font-size: 1.5rem; }
+
+  .achievement-card__num { font-size: 2.25rem; }
+
+  .btn { padding: 0.85rem 1.75rem; font-size: 0.875rem; }
+
+  .section-header { margin-bottom: var(--space-6); }
+
+  .gallery-filter { padding: 0.5rem 1.1rem; font-size: 0.8125rem; }
+}
+
+/* ===========================================
+   LARGE DESKTOP (>= 1440px)
+=========================================== */
+@media (min-width: 1440px) {
+  :root { --container-max: 1320px; }
+}
+
+/* ===========================================
+   ULTRA WIDE (>= 1920px)
+=========================================== */
+@media (min-width: 1920px) {
+  :root { --container-max: 1500px; }
+  html { font-size: 18px; }
+}

@@ -1,0 +1,494 @@
+/* ===========================================
+   SMTB SCHOOL — ANIMATIONS
+   animations.css
+   All reusable animation classes & keyframes
+=========================================== */
+
+/* ===========================================
+   REVEAL BASE (used by Intersection Observer)
+=========================================== */
+.reveal,
+.fade-up,
+.fade-left,
+.fade-right,
+.zoom,
+.scale,
+.blur-in,
+.slide-up,
+.slide-left {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.reveal { transform: translateY(40px); }
+.fade-up { transform: translateY(40px); }
+.fade-left { transform: translateX(-60px); }
+.fade-right { transform: translateX(60px); }
+.zoom { transform: scale(0.85); }
+.scale { transform: scale(0.9); }
+.blur-in { filter: blur(12px); transform: scale(1.05); }
+.slide-up { transform: translateY(80px); }
+.slide-left { transform: translateX(80px); }
+
+/* When .is-visible is added by JS, animate to natural state */
+.reveal.is-visible,
+.fade-up.is-visible,
+.fade-left.is-visible,
+.fade-right.is-visible,
+.zoom.is-visible,
+.scale.is-visible,
+.slide-up.is-visible,
+.slide-left.is-visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+  filter: blur(0);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+/* ===========================================
+   FLOAT
+=========================================== */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: float 9s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* ===========================================
+   ROTATE
+=========================================== */
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+.rotate-slow {
+  animation: rotate 40s linear infinite;
+}
+
+.rotate-reverse {
+  animation: rotate-reverse 30s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* ===========================================
+   GLOW
+=========================================== */
+.glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3),
+                0 0 40px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.5),
+                0 0 80px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* ===========================================
+   SHIMMER
+=========================================== */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+/* ===========================================
+   WAVE (animated SVG divider)
+=========================================== */
+.wave {
+  animation: wave 8s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-25px); }
+}
+
+/* ===========================================
+   GRADIENT ANIMATION
+=========================================== */
+.gradient-animation {
+  background: linear-gradient(
+    -45deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary-dark),
+    var(--color-secondary-dark)
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===========================================
+   BUTTON RIPPLE
+=========================================== */
+.btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  animation: rippleEffect 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ===========================================
+   HERO TITLE — typing/reveal animation
+=========================================== */
+.hero-title .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroWordReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroWordReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================================
+   CARD HOVER
+=========================================== */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 24px 60px rgba(8, 28, 58, 0.18);
+}
+
+/* ===========================================
+   IMAGE HOVER
+=========================================== */
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-hover:hover img {
+  transform: scale(1.08);
+}
+
+/* ===========================================
+   PARALLAX
+=========================================== */
+.parallax {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* ===========================================
+   LOADER
+=========================================== */
+.loader__logo {
+  animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loaderPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.95); }
+}
+
+/* ===========================================
+   PROGRESS BAR (loader fill)
+=========================================== */
+.loader__bar-fill {
+  animation: loaderBar 1.8s ease-out forwards;
+}
+
+@keyframes loaderBar {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+/* ===========================================
+   SCROLL INDICATOR LINE
+=========================================== */
+@keyframes scrollLine {
+  0% { top: -100%; }
+  100% { top: 200%; }
+}
+
+/* ===========================================
+   PARTICLE FLOAT
+=========================================== */
+.particle {
+  animation: particleFloat 15s linear infinite;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% {
+    transform: translateY(-100vh) translateX(40px);
+    opacity: 0;
+  }
+}
+
+/* ===========================================
+   BLOB MOVEMENT
+=========================================== */
+.blob {
+  animation: blobMove 20s ease-in-out infinite;
+}
+
+.blob-slow {
+  animation: blobMove 30s ease-in-out infinite;
+}
+
+@keyframes blobMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* ===========================================
+   TEXT REVEAL (line by line)
+=========================================== */
+.text-reveal {
+  overflow: hidden;
+}
+
+.text-reveal__inner {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.is-visible .text-reveal__inner {
+  transform: translateY(0);
+}
+
+/* ===========================================
+   FADE IN (generic)
+=========================================== */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===========================================
+   FADE OUT
+=========================================== */
+.fade-out {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ===========================================
+   SLIDE IN (generic)
+=========================================== */
+.slide-in-right {
+  animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ===========================================
+   BOUNCE
+=========================================== */
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===========================================
+   PULSE
+=========================================== */
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* ===========================================
+   GLASS REFLECTION
+=========================================== */
+.glass-reflection {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-reflection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-reflection:hover::before {
+  left: 150%;
+}
+
+/* ===========================================
+   SECTION TRANSITION (gradient sweep)
+=========================================== */
+.section-transition {
+  position: relative;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-transition.is-visible::before {
+  transform: scaleX(1);
+}
+
+/* ===========================================
+   MAGNETIC BUTTON TRANSITION
+=========================================== */
+.magnetic-wrap .btn {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ===========================================
+   REDUCED MOTION
+=========================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .fade-up,
+  .fade-left,
+  .fade-right,
+  .zoom,
+  .scale,
+  .blur-in,
+  .slide-up,
+  .slide-left {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
