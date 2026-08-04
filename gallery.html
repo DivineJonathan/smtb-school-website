@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Life at SMTB School</title>
+  <meta name="description" content="Explore moments of learning, friendship, worship, and joy captured across the SMTB School campus." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+<body>
+
+  <div class="loader"><div class="loader__logo">SMTB <span class="accent">School</span></div><div class="loader__bar"><div class="loader__bar-fill"></div></div></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo"><span class="navbar__logo-mark">S</span><span class="navbar__logo-text"><span class="navbar__logo-name">SMTB</span><span class="navbar__logo-sub">School</span></span></a>
+      <div class="navbar__links">
+        <a href="/" class="navbar__link">Home</a><a href="/about.html" class="navbar__link">About</a><a href="/academics.html" class="navbar__link">Academics</a><a href="/admissions.html" class="navbar__link">Admissions</a><a href="/gallery.html" class="navbar__link navbar__link--active">Gallery</a><a href="/news.html" class="navbar__link">News</a><a href="/contact.html" class="navbar__link">Contact</a>
+      </div>
+      <div class="navbar__cta"><a href="/admissions.html" class="btn btn--primary btn--sm">Apply Now</a></div>
+      <button class="navbar__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="/" class="mobile-menu__link">Home</a><a href="/about.html" class="mobile-menu__link">About</a><a href="/academics.html" class="mobile-menu__link">Academics</a><a href="/admissions.html" class="mobile-menu__link">Admissions</a><a href="/gallery.html" class="mobile-menu__link">Gallery</a><a href="/news.html" class="mobile-menu__link">News</a><a href="/contact.html" class="mobile-menu__link">Contact</a>
+    <div class="mobile-menu__cta"><a href="/admissions.html" class="btn btn--primary btn--block">Apply Now</a></div>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header__bg"><img src="https://images.pexels.com/photos/32815203/pexels-photo-32815203.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080" alt="Schoolchildren gathered outdoors" loading="eager" /></div>
+    <div class="page-header__overlay"></div>
+    <div class="page-header__content">
+      <h1>Gallery</h1>
+      <div class="page-header__breadcrumb"><a href="/">Home</a> <span>/</span> Gallery</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Campus Life</span>
+        <h2>Moments That Matter</h2>
+        <p>A glimpse into the daily life, celebrations, and milestones of our school community.</p>
+      </div>
+
+      <div class="gallery-filters reveal fade-up">
+        <button class="gallery-filter gallery-filter--active" data-filter="all">All</button>
+        <button class="gallery-filter" data-filter="campus">Campus</button>
+        <button class="gallery-filter" data-filter="learning">Learning</button>
+        <button class="gallery-filter" data-filter="events">Events</button>
+        <button class="gallery-filter" data-filter="sports">Sports</button>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-item reveal zoom" data-category="learning">
+          <img src="https://images.pexels.com/photos/37898351/pexels-photo-37898351.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="Students in a lecture hall" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="campus">
+          <img src="https://images.pexels.com/photos/16086326/pexels-photo-16086326.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="School campus building" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="learning">
+          <img src="https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Student in library" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="learning">
+          <img src="https://images.pexels.com/photos/8471913/pexels-photo-8471913.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Science experiment" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="events">
+          <img src="https://images.pexels.com/photos/10604063/pexels-photo-10604063.jpeg?auto=compress&cs=tinysrgb&w=600&h=700" alt="Graduation ceremony" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-3" data-category="campus">
+          <img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=600&h=450" alt="School courtyard" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="events">
+          <img src="https://images.pexels.com/photos/32815203/pexels-photo-32815203.jpeg?auto=compress&cs=tinysrgb&w=600&h=650" alt="Schoolchildren gathered" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="learning">
+          <img src="https://images.pexels.com/photos/34526416/pexels-photo-34526416.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Students collaborating" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-3" data-category="events">
+          <img src="https://images.pexels.com/photos/10604068/pexels-photo-10604068.jpeg?auto=compress&cs=tinysrgb&w=600&h=600" alt="Graduates celebrating" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="campus">
+          <img src="https://images.pexels.com/photos/12091126/pexels-photo-12091126.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Campus aerial view" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="learning">
+          <img src="https://images.pexels.com/photos/6214644/pexels-photo-6214644.jpeg?auto=compress&cs=tinysrgb&w=600&h=450" alt="Students reading in library" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-3" data-category="events">
+          <img src="https://images.pexels.com/photos/14909652/pexels-photo-14909652.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Children in uniforms saluting" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__wave"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C320,80 480,0 720,40 C960,80 1120,0 1440,40 L1440,80 L0,80 Z"></path></svg></div>
+    <div class="container footer__main">
+      <div class="footer__newsletter reveal fade-up"><h4>Stay Connected</h4><p>Receive school news, event invitations, and insights on Christian education — straight to your inbox.</p><form class="newsletter-form"><input type="email" placeholder="Enter your email" required /><button type="submit">Subscribe</button></form></div>
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="/" class="navbar__logo"><span class="navbar__logo-mark">S</span><span class="navbar__logo-text"><span class="navbar__logo-name">SMTB School</span><span class="navbar__logo-sub">Christian Excellence</span></span></a><p>A premier Christian school nurturing faith, character, and academic excellence since 1998.</p><div class="footer__socials"><a href="#" class="footer__social" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" class="footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#" class="footer__social" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a><a href="#" class="footer__social" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a></div></div>
+        <div class="footer__col"><h5>Quick Links</h5><div class="footer__links"><a href="/about.html">About Us</a><a href="/academics.html">Academics</a><a href="/admissions.html">Admissions</a><a href="/gallery.html">Gallery</a><a href="/news.html">News</a><a href="/contact.html">Contact</a></div></div>
+        <div class="footer__col"><h5>Schools</h5><div class="footer__links"><a href="/academics.html">Nursery</a><a href="/academics.html">Primary</a><a href="/academics.html">Junior Secondary</a><a href="/academics.html">Senior Secondary</a><a href="/admissions.html">Apply Now</a></div></div>
+        <div class="footer__col"><h5>Contact</h5><div class="footer__contact-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>SMTB School Campus, Abuja, Nigeria</span></div><div class="footer__contact-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+234 800 123 4567</span></div><div class="footer__contact-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@smtb.wofgs.com.ng</span></div></div>
+      </div>
+      <div class="footer__map reveal fade-up"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.39%2C9.07%2C7.49%2C9.07&layer=mapnik" title="SMTB School location" loading="lazy"></iframe></div>
+    </div>
+    <div class="container footer__bottom"><p>&copy; 2024 SMTB School. All rights reserved. Designed with faith and excellence.</p><div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="/contact.html">Contact</a></div></div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+    <img class="lightbox__img" src="" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    <div class="lightbox__caption"></div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/animations.js"></script>
+</body>
+</html>
