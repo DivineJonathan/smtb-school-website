@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMTB School — Excellence in Christian Education</title>
+  <meta name="description" content="SMTB School — one of Africa's finest private Christian schools. Nurturing faith, character, and academic excellence from Nursery to Senior Secondary." />
+  <meta name="keywords" content="SMTB School, Christian school Nigeria, private school, nursery, primary, secondary, academic excellence" />
+  <meta property="og:title" content="SMTB School — Excellence in Christian Education" />
+  <meta property="og:description" content="Nurturing faith, character, and academic excellence from Nursery to Senior Secondary." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="loader">
+    <div class="loader__logo">SMTB <span class="accent">School</span></div>
+    <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        <span class="navbar__logo-mark">S</span>
+        <span class="navbar__logo-text">
+          <span class="navbar__logo-name">SMTB</span>
+          <span class="navbar__logo-sub">School</span>
+        </span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="/" class="navbar__link navbar__link--active" data-section="home">Home</a>
+        <a href="/about.html" class="navbar__link">About</a>
+        <a href="/academics.html" class="navbar__link">Academics</a>
+        <a href="/admissions.html" class="navbar__link">Admissions</a>
+        <a href="/gallery.html" class="navbar__link">Gallery</a>
+        <a href="/news.html" class="navbar__link">News</a>
+        <a href="/contact.html" class="navbar__link">Contact</a>
+      </div>
+
+      <div class="navbar__cta">
+        <a href="/admissions.html" class="btn btn--primary btn--sm">Apply Now</a>
+      </div>
+
+      <button class="navbar__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="/" class="mobile-menu__link">Home</a>
+    <a href="/about.html" class="mobile-menu__link">About</a>
+    <a href="/academics.html" class="mobile-menu__link">Academics</a>
+    <a href="/admissions.html" class="mobile-menu__link">Admissions</a>
+    <a href="/gallery.html" class="mobile-menu__link">Gallery</a>
+    <a href="/news.html" class="mobile-menu__link">News</a>
+    <a href="/contact.html" class="mobile-menu__link">Contact</a>
+    <div class="mobile-menu__cta">
+      <a href="/admissions.html" class="btn btn--primary btn--block">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg" data-mouse-parallax="15">
+      <img src="https://images.pexels.com/photos/37898351/pexels-photo-37898351.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080" alt="Students attending a lecture in school uniforms" loading="eager" />
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__particles"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <span class="eyebrow" style="color: var(--color-accent); margin-bottom: 1.5rem;">Est. 1998 · Christian Excellence</span>
+        <h1 class="hero-title">Nurturing <span class="accent">Faith</span>, Inspiring <span class="accent">Minds</span>, Shaping Futures</h1>
+        <p class="hero__subtitle">A premier Christian school where academic rigour meets character formation — preparing young people to lead with wisdom, integrity, and compassion.</p>
+        <div class="hero__actions">
+          <div class="magnetic-wrap"><a href="/admissions.html" class="btn btn--primary btn--lg">Begin Your Journey <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+          <div class="magnetic-wrap"><a href="/about.html" class="btn btn--outline-light btn--lg">Discover SMTB</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="container">
+        <div class="hero__stats-inner">
+          <div class="hero__stat">
+            <div class="hero__stat-num" data-counter="26" data-suffix="+">0</div>
+            <div class="hero__stat-label">Years of Excellence</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num" data-counter="1200" data-suffix="+">0</div>
+            <div class="hero__stat-label">Students Enrolled</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num" data-counter="98" data-suffix="%">0</div>
+            <div class="hero__stat-label">Exam Success Rate</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num" data-counter="85" data-suffix="+">0</div>
+            <div class="hero__stat-label">Expert Educators</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal's Welcome -->
+  <section class="principal">
+    <div class="blob blob--gold blob-slow" style="width: 400px; height: 400px; top: -100px; right: -100px;"></div>
+    <div class="container">
+      <div class="principal__grid">
+        <div class="principal__image-wrap reveal fade-right">
+          <div class="principal__image">
+            <img src="https://images.pexels.com/photos/7446948/pexels-photo-7446948.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000" alt="Principal of SMTB School" loading="lazy" />
+          </div>
+          <div class="principal__badge">
+            <div class="principal__badge-role">Principal</div>
+            <div class="principal__badge-name">Dr. Samuel Adeyemi</div>
+          </div>
+        </div>
+
+        <div class="principal__content reveal fade-left">
+          <span class="eyebrow">A Word of Welcome</span>
+          <h2>Where Every Child Is Known, Loved, and Challenged</h2>
+          <p>At SMTB School, we believe education is far more than the transmission of knowledge. It is the cultivation of soul, mind, and character — a sacred trust we hold with every family that walks through our gates.</p>
+          <blockquote class="principal__quote">"We do not merely prepare students for examinations; we prepare them for life — to think clearly, act honourably, and live faithfully."</blockquote>
+          <p>For over two decades, our community has been shaped by a simple conviction: that young people flourish when they are known deeply, challenged appropriately, and surrounded by adults who love them. That is the SMTB difference.</p>
+          <div class="principal__signature">Dr. Samuel Adeyemi</div>
+          <div class="principal__signature-role">Principal, SMTB School</div>
+          <div class="mt-4 magnetic-wrap">
+            <a href="/about.html" class="btn btn--outline">Read More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Core Values -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Our Foundation</span>
+        <h2>Core Values That Shape Everything</h2>
+        <p>Four enduring principles guide our community — woven through every lesson, every relationship, and every decision.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card reveal fade-up delay-1">
+          <div class="value-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>Faith</h4>
+          <p>A Christ-centred foundation where students discover purpose, hope, and a lifelong relationship with God.</p>
+        </div>
+        <div class="value-card reveal fade-up delay-2">
+          <div class="value-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Integrity</h4>
+          <p>We cultivate honesty, courage, and moral clarity — the backbone of character that endures beyond the classroom.</p>
+        </div>
+        <div class="value-card reveal fade-up delay-3">
+          <div class="value-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4>Excellence</h4>
+          <p>We pursue the highest standard in all things — not for praise, but because doing things well honours God and serves others.</p>
+        </div>
+        <div class="value-card reveal fade-up delay-4">
+          <div class="value-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Service</h4>
+          <p>Leadership begins with serving others. Our students learn that their gifts are entrusted to them for the good of their community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section class="section" id="academics">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Academic Life</span>
+        <h2>An Education That Opens Doors</h2>
+        <p>Our curriculum blends rigour with wonder — designed to produce thoughtful, articulate, and capable young people ready for the world's best universities.</p>
+      </div>
+
+      <div class="academics-block">
+        <div class="academics-block__image image-hover reveal fade-right">
+          <img src="https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=900&h=600" alt="Student browsing books in a modern library" loading="lazy" />
+        </div>
+        <div class="academics-block__content reveal fade-left">
+          <span class="eyebrow">Lower School</span>
+          <h3>Foundations for a Lifetime</h3>
+          <p>In the early years, we build the habits of mind and heart that everything else depends upon — curiosity, discipline, kindness, and a love of learning that does not fade.</p>
+          <ul class="academics-block__list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Phonics, numeracy, and inquiry-based discovery</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Small class sizes with dedicated specialist teachers</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Daily worship and Christian formation</li>
+          </ul>
+          <div class="magnetic-wrap mt-3"><a href="/academics.html" class="btn btn--ghost">Explore Lower School →</a></div>
+        </div>
+      </div>
+
+      <div class="academics-block">
+        <div class="academics-block__image image-hover reveal fade-left">
+          <img src="https://images.pexels.com/photos/8471913/pexels-photo-8471913.jpeg?auto=compress&cs=tinysrgb&w=900&h=600" alt="Students conducting a science experiment" loading="lazy" />
+        </div>
+        <div class="academics-block__content reveal fade-right">
+          <span class="eyebrow">Upper School</span>
+          <h3>Preparation for the World's Best</h3>
+          <p>Our senior students pursue a rigorous programme of sciences, humanities, and the arts — graduating as confident, articulate young adults ready to lead and serve.</p>
+          <ul class="academics-block__list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> WAEC, IGCSE, and university-track pathways</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Advanced laboratories, studios, and debate societies</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dedicated university and careers guidance</li>
+          </ul>
+          <div class="magnetic-wrap mt-3"><a href="/academics.html" class="btn btn--ghost">Explore Upper School →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose SMTB -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">The SMTB Difference</span>
+        <h2>Why Families Choose SMTB</h2>
+        <p>Six reasons discerning families entrust their children to our care — year after year, generation after generation.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card card-hover reveal fade-up delay-1">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h4>Christian Worldview</h4>
+          <p>Every subject is taught through the lens of a Christian understanding of truth, beauty, and purpose.</p>
+        </div>
+        <div class="feature-card card-hover reveal fade-up delay-2">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+          </div>
+          <h4>Academic Rigour</h4>
+          <p>A demanding curriculum that produces consistently outstanding examination results and university placements.</p>
+        </div>
+        <div class="feature-card card-hover reveal fade-up delay-3">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h4>Small Classes</h4>
+          <p>With a maximum of 18 students per class, every child is truly known, supported, and stretched.</p>
+        </div>
+        <div class="feature-card card-hover reveal fade-up delay-1">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+          <h4>World-Class Facilities</h4>
+          <p>Science laboratories, art studios, libraries, sports complex, and technology-rich classrooms.</p>
+        </div>
+        <div class="feature-card card-hover reveal fade-up delay-2">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h4>Character Formation</h4>
+          <p>House system, leadership programme, and service initiatives that forge resilient, honourable young people.</p>
+        </div>
+        <div class="feature-card card-hover reveal fade-up delay-3">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>Caring Community</h4>
+          <p>A family atmosphere where teachers, parents, and students walk together through every season of growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Levels -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Our Schools</span>
+        <h2>A Journey from First Steps to Final Exams</h2>
+        <p>Four distinct stages, one continuous vision — each building on the last, each with its own character and care.</p>
+      </div>
+
+      <div class="levels-grid">
+        <a href="/academics.html" class="level-card reveal fade-up delay-1">
+          <div class="level-card__bg">
+            <img src="https://images.pexels.com/photos/31773583/pexels-photo-31773583.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="Young children in a classroom" loading="lazy" />
+          </div>
+          <div class="level-card__overlay"></div>
+          <div class="level-card__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="level-card__content">
+            <div class="level-card__age">Ages 3–5</div>
+            <h3 class="level-card__title">Nursery</h3>
+            <p class="level-card__desc">A joyful, play-based beginning where curiosity, language, and friendship take root.</p>
+          </div>
+        </a>
+
+        <a href="/academics.html" class="level-card reveal fade-up delay-2">
+          <div class="level-card__bg">
+            <img src="https://images.pexels.com/photos/28593050/pexels-photo-28593050.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="Children smiling in school uniforms" loading="lazy" />
+          </div>
+          <div class="level-card__overlay"></div>
+          <div class="level-card__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="level-card__content">
+            <div class="level-card__age">Ages 6–11</div>
+            <h3 class="level-card__title">Primary</h3>
+            <p class="level-card__desc">Strong foundations in literacy, numeracy, and character — with wonder intact.</p>
+          </div>
+        </a>
+
+        <a href="/academics.html" class="level-card reveal fade-up delay-3">
+          <div class="level-card__bg">
+            <img src="https://images.pexels.com/photos/34211744/pexels-photo-34211744.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="High school students in uniform" loading="lazy" />
+          </div>
+          <div class="level-card__overlay"></div>
+          <div class="level-card__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="level-card__content">
+            <div class="level-card__age">Ages 12–14</div>
+            <h3 class="level-card__title">Junior Secondary</h3>
+            <p class="level-card__desc">A bridge to deeper study — where independence, argument, and craft begin to grow.</p>
+          </div>
+        </a>
+
+        <a href="/academics.html" class="level-card reveal fade-up delay-4">
+          <div class="level-card__bg">
+            <img src="https://images.pexels.com/photos/34526416/pexels-photo-34526416.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="Students collaborating in a classroom" loading="lazy" />
+          </div>
+          <div class="level-card__overlay"></div>
+          <div class="level-card__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="level-card__content">
+            <div class="level-card__age">Ages 15–17</div>
+            <h3 class="level-card__title">Senior Secondary</h3>
+            <p class="level-card__desc">University-track rigour, leadership, and the final shaping of a life of purpose.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Our Campus</span>
+        <h2>Facilities Built for Discovery</h2>
+        <p>Spaces designed to inspire — where curiosity is given room, and talent is given tools.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card reveal zoom delay-1">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="Modern school library" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <h4 class="facility-card__title">Library & Research Centre</h4>
+            <p class="facility-card__desc">Over 15,000 volumes, digital archives, and quiet study halls.</p>
+          </div>
+        </div>
+        <div class="facility-card reveal zoom delay-2">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/8471913/pexels-photo-8471913.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="Science laboratory" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 8a4 4 0 0 1-4 6H9a4 4 0 0 1-4-6l4-8V3z"/></svg></div>
+            <h4 class="facility-card__title">Science Laboratories</h4>
+            <p class="facility-card__desc">Purpose-built physics, chemistry, and biology labs with modern equipment.</p>
+          </div>
+        </div>
+        <div class="facility-card reveal zoom delay-3">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="School courtyard and grounds" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+            <h4 class="facility-card__title">Sports Complex</h4>
+            <p class="facility-card__desc">Football pitch, basketball courts, athletics track, and indoor sports hall.</p>
+          </div>
+        </div>
+        <div class="facility-card reveal zoom delay-1">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/6214644/pexels-photo-6214644.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="Students reading in a library" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h4 class="facility-card__title">Arts & Music Studios</h4>
+            <p class="facility-card__desc">Dedicated spaces for painting, sculpture, orchestra, and choral music.</p>
+          </div>
+        </div>
+        <div class="facility-card reveal zoom delay-2">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/37898351/pexels-photo-37898351.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="Students in a classroom" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h4 class="facility-card__title">Technology Hub</h4>
+            <p class="facility-card__desc">Robotics lab, coding suites, and interactive smart classrooms.</p>
+          </div>
+        </div>
+        <div class="facility-card reveal zoom delay-3">
+          <div class="facility-card__img"><img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=700&h=525" alt="School grounds and architecture" loading="lazy" /></div>
+          <div class="facility-card__overlay"></div>
+          <div class="facility-card__content">
+            <div class="facility-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h4 class="facility-card__title">Chapel & Worship Hall</h4>
+            <p class="facility-card__desc">The heart of our community — a space for daily worship and reflection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Campus Life</span>
+        <h2>Glimpses of Life at SMTB</h2>
+        <p>Moments of learning, friendship, worship, and joy — captured across our campus.</p>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-item reveal zoom" data-category="campus">
+          <img src="https://images.pexels.com/photos/37898351/pexels-photo-37898351.jpeg?auto=compress&cs=tinysrgb&w=600&h=800" alt="Students in a lecture hall" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="learning">
+          <img src="https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Student in a library" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="events">
+          <img src="https://images.pexels.com/photos/10604063/pexels-photo-10604063.jpeg?auto=compress&cs=tinysrgb&w=600&h=700" alt="Graduation ceremony in Nigeria" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-1" data-category="learning">
+          <img src="https://images.pexels.com/photos/8471913/pexels-photo-8471913.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Science experiment" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-2" data-category="campus">
+          <img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=600&h=450" alt="School courtyard" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery-item reveal zoom delay-3" data-category="events">
+          <img src="https://images.pexels.com/photos/32815203/pexels-photo-32815203.jpeg?auto=compress&cs=tinysrgb&w=600&h=650" alt="Schoolchildren gathered outdoors" loading="lazy" />
+          <div class="gallery-item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+      </div>
+
+      <div class="text-center mt-6 reveal fade-up">
+        <div class="magnetic-wrap"><a href="/gallery.html" class="btn btn--outline">View Full Gallery <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section achievements">
+    <div class="achievements__bg" data-parallax="0.2">
+      <img src="https://images.pexels.com/photos/10604068/pexels-photo-10604068.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080" alt="" loading="lazy" />
+    </div>
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered" style="color: var(--color-accent);">Our Record</span>
+        <h2 style="color: #fff;">A Tradition of Achievement</h2>
+        <p style="color: rgba(255,255,255,0.7);">Numbers tell part of the story — the lives transformed, the doors opened, the futures shaped.</p>
+      </div>
+
+      <div class="achievements__grid">
+        <div class="achievement-card reveal fade-up delay-1">
+          <div class="achievement-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+          <div class="achievement-card__num"><span data-counter="250" data-suffix="+">0</span><span class="achievement-card__suffix">+</span></div>
+          <div class="achievement-card__label">Awards Won</div>
+        </div>
+        <div class="achievement-card reveal fade-up delay-2">
+          <div class="achievement-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div class="achievement-card__num"><span data-counter="98" data-suffix="%">0</span><span class="achievement-card__suffix">%</span></div>
+          <div class="achievement-card__label">WAEC Pass Rate</div>
+        </div>
+        <div class="achievement-card reveal fade-up delay-3">
+          <div class="achievement-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg></div>
+          <div class="achievement-card__num"><span data-counter="500" data-suffix="+">0</span><span class="achievement-card__suffix">+</span></div>
+          <div class="achievement-card__label">University Placements</div>
+        </div>
+        <div class="achievement-card reveal fade-up delay-4">
+          <div class="achievement-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <div class="achievement-card__num"><span data-counter="1200" data-suffix="+">0</span><span class="achievement-card__suffix">+</span></div>
+          <div class="achievement-card__label">Graduates Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--dark testimonials">
+    <div class="blob blob--gold blob-slow" style="width: 500px; height: 500px; top: -150px; left: -150px;"></div>
+    <div class="blob blob--blue blob-slow" style="width: 400px; height: 400px; bottom: -100px; right: -100px;"></div>
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered" style="color: var(--color-accent);">Voices of SMTB</span>
+        <h2>What Our Community Says</h2>
+      </div>
+
+      <div class="testimonials-slider reveal fade-up">
+        <div class="testimonials-track">
+          <div class="testimonial-card glass-reflection">
+            <div class="testimonial-card__rating">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"SMTB did not just teach my daughter — it formed her. She walked in a bright child and walked out a thoughtful, grounded young woman of faith. I could not have asked for more."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="https://images.pexels.com/photos/14538746/pexels-photo-14538746.jpeg?auto=compress&cs=tinysrgb&w=200&h=200" alt="Parent portrait" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-card__name">Mrs. Adaeze Okonkwo</div>
+                <div class="testimonial-card__role">Parent, Class of 2022</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-reflection">
+            <div class="testimonial-card__rating">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"The teachers at SMTB believed in me before I believed in myself. They pushed me to aim higher than I thought I could, and I am now studying engineering at university because of them."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="https://images.pexels.com/photos/14950779/pexels-photo-14950779.jpeg?auto=compress&cs=tinysrgb&w=200&h=200" alt="Alumni portrait" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-card__name">Daniel Okafor</div>
+                <div class="testimonial-card__role">Alumnus, Class of 2021</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-reflection">
+            <div class="testimonial-card__rating">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-card__quote">"What sets SMTB apart is the way faith is woven into everything — not as a subject, but as the air the school breathes. My son has grown in knowledge, but more importantly, in character."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="https://images.pexels.com/photos/35681211/pexels-photo-35681211.jpeg?auto=compress&cs=tinysrgb&w=200&h=200" alt="Parent portrait" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-card__name">Mr. Emeka Nwosu</div>
+                <div class="testimonial-card__role">Parent, Current Student</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-nav">
+          <button class="testimonials-arrow testimonials-arrow--prev" aria-label="Previous testimonial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+          <div class="testimonials-dots">
+            <span class="testimonials-dot testimonials-dot--active"></span>
+            <span class="testimonials-dot"></span>
+            <span class="testimonials-dot"></span>
+          </div>
+          <button class="testimonials-arrow testimonials-arrow--next" aria-label="Next testimonial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Latest Stories</span>
+        <h2>News & Events</h2>
+        <p>What is happening on campus — and where our community is making a difference.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-featured reveal fade-up">
+          <div class="news-featured__img"><img src="https://images.pexels.com/photos/10604068/pexels-photo-10604068.jpeg?auto=compress&cs=tinysrgb&w=900&h=600" alt="Graduation celebration" loading="lazy" /></div>
+          <div class="news-featured__overlay"></div>
+          <div class="news-featured__content">
+            <span class="news-tag">Achievement</span>
+            <h3 class="news-featured__title">Class of 2024 Records Best-Ever WAEC Results</h3>
+            <p class="news-featured__excerpt">Our graduating class achieved a 99.2% pass rate, with 78% earning distinctions in five or more subjects — a new school record.</p>
+            <div class="news-featured__date">August 28, 2024</div>
+          </div>
+        </article>
+
+        <article class="news-card reveal fade-up delay-1">
+          <div class="news-card__img image-hover"><img src="https://images.pexels.com/photos/8471913/pexels-photo-8471913.jpeg?auto=compress&cs=tinysrgb&w=500&h=313" alt="Science fair" loading="lazy" /></div>
+          <div class="news-card__body">
+            <span class="news-tag">Event</span>
+            <h4 class="news-card__title">Annual Science & Innovation Fair Returns</h4>
+            <div class="news-card__date">September 15, 2024</div>
+          </div>
+        </article>
+
+        <article class="news-card reveal fade-up delay-2">
+          <div class="news-card__img image-hover"><img src="https://images.pexels.com/photos/32815203/pexels-photo-32815203.jpeg?auto=compress&cs=tinysrgb&w=500&h=313" alt="Community service" loading="lazy" /></div>
+          <div class="news-card__body">
+            <span class="news-tag">Service</span>
+            <h4 class="news-card__title">Students Lead Community Outreach Initiative</h4>
+            <div class="news-card__date">October 2, 2024</div>
+          </div>
+        </article>
+
+        <article class="news-card reveal fade-up delay-3">
+          <div class="news-card__img image-hover"><img src="https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=500&h=313" alt="Library reading week" loading="lazy" /></div>
+          <div class="news-card__body">
+            <span class="news-tag">Academics</span>
+            <h4 class="news-card__title">Reading Week Celebrates African Literature</h4>
+            <div class="news-card__date">October 18, 2024</div>
+          </div>
+        </article>
+
+        <article class="news-card reveal fade-up delay-4">
+          <div class="news-card__img image-hover"><img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=500&h=313" alt="Sports day" loading="lazy" /></div>
+          <div class="news-card__body">
+            <span class="news-tag">Sports</span>
+            <h4 class="news-card__title">Inter-House Athletics Championship Highlights</h4>
+            <div class="news-card__date">November 5, 2024</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-6 reveal fade-up">
+        <div class="magnetic-wrap"><a href="/news.html" class="btn btn--outline">All News & Events <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Process -->
+  <section class="section" id="admissions">
+    <div class="container">
+      <div class="section-header reveal fade-up">
+        <span class="eyebrow eyebrow--centered">Join Our Community</span>
+        <h2>How to Apply</h2>
+        <p>Four simple steps stand between you and becoming part of the SMTB family.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal fade-up delay-1">
+          <div class="process-step__num">1</div>
+          <h4 class="process-step__title">Enquire</h4>
+          <p class="process-step__desc">Submit an enquiry form or visit our campus. We will guide you through everything.</p>
+        </div>
+        <div class="process-step reveal fade-up delay-2">
+          <div class="process-step__num">2</div>
+          <h4 class="process-step__title">Visit & Tour</h4>
+          <p class="process-step__desc">Experience SMTB in person — meet teachers, tour facilities, and ask questions.</p>
+        </div>
+        <div class="process-step reveal fade-up delay-3">
+          <div class="process-step__num">3</div>
+          <h4 class="process-step__title">Assessment</h4>
+          <p class="process-step__desc">Your child takes a friendly entrance assessment so we can know them well.</p>
+        </div>
+        <div class="process-step reveal fade-up delay-4">
+          <div class="process-step__num">4</div>
+          <h4 class="process-step__title">Welcome</h4>
+          <p class="process-step__desc">Receive your offer, accept your place, and join the SMTB family.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-6 reveal fade-up">
+        <div class="magnetic-wrap"><a href="/admissions.html" class="btn btn--primary btn--lg">Begin Your Application <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <img src="https://images.pexels.com/photos/8926848/pexels-photo-8926848.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080" alt="" loading="lazy" />
+    </div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal fade-up">
+        <h2>Give Your Child the Gift of a Foundation That Lasts</h2>
+        <p>Admissions for the 2025–2026 academic year are now open. Limited places available across all year groups.</p>
+        <div class="magnetic-wrap"><a href="/admissions.html" class="btn btn--primary btn--lg">Apply for 2025–2026 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C320,80 480,0 720,40 C960,80 1120,0 1440,40 L1440,80 L0,80 Z"></path>
+      </svg>
+    </div>
+
+    <div class="container footer__main">
+      <!-- Newsletter -->
+      <div class="footer__newsletter reveal fade-up">
+        <h4>Stay Connected</h4>
+        <p>Receive school news, event invitations, and insights on Christian education — straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="navbar__logo">
+            <span class="navbar__logo-mark">S</span>
+            <span class="navbar__logo-text">
+              <span class="navbar__logo-name">SMTB School</span>
+              <span class="navbar__logo-sub">Christian Excellence</span>
+            </span>
+          </a>
+          <p>A premier Christian school nurturing faith, character, and academic excellence since 1998.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer__social" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" class="footer__social" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h5>Quick Links</h5>
+          <div class="footer__links">
+            <a href="/about.html">About Us</a>
+            <a href="/academics.html">Academics</a>
+            <a href="/admissions.html">Admissions</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/news.html">News</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h5>Schools</h5>
+          <div class="footer__links">
+            <a href="/academics.html">Nursery</a>
+            <a href="/academics.html">Primary</a>
+            <a href="/academics.html">Junior Secondary</a>
+            <a href="/academics.html">Senior Secondary</a>
+            <a href="/admissions.html">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>SMTB School Campus, Abuja, Nigeria</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+234 800 123 4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@smtb.wofgs.com.ng</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="footer__map reveal fade-up">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.39%2C9.07%2C7.49%2C9.07&layer=mapnik" title="SMTB School location" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2024 SMTB School. All rights reserved. Designed with faith and excellence.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+    <img class="lightbox__img" src="" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    <div class="lightbox__caption"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/animations.js"></script>
+</body>
+</html>
